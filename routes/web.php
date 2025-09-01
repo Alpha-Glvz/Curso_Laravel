@@ -6,6 +6,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/Contacto', function () {
-    return "Aqui podras contactar";
+Route::get('/servicios', function () {
+    return view('servicios');
 });
