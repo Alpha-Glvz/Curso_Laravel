@@ -11,7 +11,8 @@ Route::get('/servicios', function () {
 });
 
 Route::get('/test', function () {
-    return redirect()->route('portafolio');
+    //return redirect()->route('portafolio');
+    return to_route('portafolio');
 });
 
 Route::get('/crud', function () {
