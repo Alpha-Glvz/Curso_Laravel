@@ -19,3 +19,15 @@ Route::get('/crud', function () {
     $data = ['name' => 'Angel', 'age' => $age];
     return view('crud/index',$data);
 })->name('crud');
+
+Route::get('/acerca', function () {
+    return view('acerca');
+})->name('acerca');
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+
+Route::get('/portafolio', function () {
+    return view('portafolio');
+})->name('portafolio');
