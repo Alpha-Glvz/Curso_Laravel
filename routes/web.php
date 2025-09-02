@@ -11,7 +11,7 @@ Route::get('/servicios', function () {
 });
 
 Route::get('/test', function () {
-    return view('test');
+    return redirect()->route('portafolio');
 });
 
 Route::get('/crud', function () {
@@ -27,6 +27,7 @@ Route::get('/acerca', function () {
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
+
 
 Route::get('/portafolio', function () {
     return view('portafolio');
