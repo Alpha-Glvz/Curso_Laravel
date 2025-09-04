@@ -6,10 +6,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/servicios', function () {
-    return view('servicios');
-});
-
 Route::get('/test', function () {
     //return redirect()->route('portafolio');
     return to_route('portafolio');
@@ -20,6 +16,11 @@ Route::get('/crud', function () {
     $data = ['name' => 'Angel', 'age' => $age];
     return view('crud/index',$data);
 })->name('crud');
+
+
+Route::get('/servicios', function () {
+    return view('servicios');
+});
 
 Route::get('/acerca', function () {
     return view('acerca');

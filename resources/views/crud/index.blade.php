@@ -9,5 +9,12 @@
     <h1>CRUD</h1>
 
     <a href="/test">Ver Test</a>
+    <p>{{ $name }}</p>
+    @if($name != "Angel")
+        Tu nombre no es Angel
+    @else
+        Tu nombre es Angel
+    @endif
+
 </body>
 </html>
