@@ -15,6 +15,8 @@
     @else
         Tu nombre es Angel
     @endif
-
+    @foreach ([1,2,3,4,5] as $item)
+        {{ $item }}        
+    @endforeach
 </body>
 </html>
