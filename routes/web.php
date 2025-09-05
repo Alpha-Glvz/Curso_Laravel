@@ -1,36 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/test', function () {
-    //return redirect()->route('portafolio');
-    return to_route('portafolio');
-});
-
-Route::get('/crud', function () {
-    $age = 33;
-    $data = ['name' => 'Angel', 'age' => $age];
-    return view('crud/index',$data);
-})->name('crud');
-
-
-Route::get('/servicios', function () {
-    return view('servicios');
-});
-
-Route::get('/acerca', function () {
-    return view('acerca');
-})->name('acerca');
-
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
-
-
-Route::get('/portafolio', function () {
-    return view('portafolio');
-})->name('portafolio');
+Route::get('/', [PageController::class, 'home'])->name('home');
+Route::get('/servicios', [PageController::class, 'services'])->name('services');
+Route::get('/portafolio', [PageController::class, 'portfolio'])->name('portfolio');
+Route::get('/acerca-de', [PageController::class, 'about'])->name('about');
+Route::get('/contacto', [PageController::class, 'contact'])->name('contact');
