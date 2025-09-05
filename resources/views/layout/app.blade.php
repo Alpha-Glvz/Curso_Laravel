@@ -6,7 +6,7 @@
     <title>@yield('title')</title>
 </head>
 <body>
-    <header>Menú Principal</header>
+    <header>Master</header>
 
     <main>
         @yield('content')
