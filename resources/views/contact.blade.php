@@ -5,8 +5,8 @@
     <p>{{ $name }}</p>
 
     @if ($name != "Angel")
-        Tu nombre es Angel
+        Tu nombre no es Angel
     @else
-        <h2>Tu nombre no es Angel</h2>
+        <h2>Tu nombre es Angel</h2>
     @endif
 @endsection

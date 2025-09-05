@@ -7,6 +7,7 @@ Route::get('/', function () {
 });
 
 Route::get('/contact', function () {
-    $data
-    return view('contact');
-});
+    $age = 33;
+    $data = ['name' => 'Angel', 'age' => $age];
+    return view('contact',$data);
+})->name('contact');
