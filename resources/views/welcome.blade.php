@@ -6,6 +6,6 @@
     <title>Welcome</title>
 </head>
 <body>
-    <h1>Hola {{ $name }}</h1>
+    <h1>Hola {{ $posts[0] }}</h1>
 </body>
 </html>

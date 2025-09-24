@@ -7,9 +7,13 @@ use Illuminate\Http\Request;
 class PrimerControlador extends Controller
 {
     function index(){
-        $age = 33;
-        $data = ['name' => 'Angel', 'age' => $age];
-        
-        return view('welcome',$data);
+        $posts = ['post1','post2'];
+        //return view('welcome',['posts'=>$posts]);
+        return view('welcome',compact('posts'));
     }
+
+    function otro($post){
+        echo $post;
+    }
+
 }
